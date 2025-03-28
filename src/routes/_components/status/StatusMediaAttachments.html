@@ -37,6 +37,11 @@
       <Media {media} {uuid} {mediaAttachments} {index} {showAsSensitive} />
     {/each}
   </easrng-image-grid>
+  <div aria-hidden="true">
+    {#each mediaAttachments as media, index}
+      <div class="status__content" style="font-size: 0.9rem; margin-top: 1px; box-sizing: border-box; padding: 0.75rem 1rem;">{media.description}</div>
+    {/each}
+  </div>
 </div>
 {#if enableShortcuts}
   <Shortcut scope={shortcutScope} key="y" on:pressed="toggleSensitiveMedia(false)"/>
@@ -48,6 +53,11 @@
         <Media {media} {uuid} {mediaAttachments} {index} {showAsSensitive} />
       {/each}
     </easrng-image-grid>
+    <div aria-hidden="true">
+      {#each mediaAttachments as media, index}
+        <div class="status__content" style="font-size: 0.9rem; margin-top: 1px; box-sizing: border-box; padding: 0.75rem 1rem;">{media.description}</div>
+      {/each}
+    </div>
   </div>
 {/if}
 {#if enableShortcuts}
