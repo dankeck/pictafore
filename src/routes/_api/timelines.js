@@ -80,5 +80,9 @@ export async function getTimeline (instanceName, accessToken, timeline, maxId, s
   if (timeline === 'direct') {
     items = items.map(item => item.last_status).filter(Boolean) // ignore falsy last_status'es
   }
+
+  items = items.filter(item =>
+    item.media_attachments.filter(mediaAttachment => mediaAttachment.type === 'image').length > 0
+  )
   return { items, headers }
 }
