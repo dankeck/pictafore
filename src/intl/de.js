@@ -1,6 +1,6 @@
 export default {
   // Home page, basic <title> and <description>
-  appName: 'Enafore',
+  appName: 'Pictafore',
   appDescription: 'Ein alternativer Web Client für Mastodon, der auf Geschwindigkeit und einfache Bedienung ausgelegt ist.',
   homeDescription: `
     <p>

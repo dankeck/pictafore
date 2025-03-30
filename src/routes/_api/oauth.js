@@ -1,16 +1,16 @@
 import { post, paramsString, WRITE_TIMEOUT } from '../_utils/ajax.js'
 import { basename } from './utils.js'
 
-const WEBSITE = 'https://enafore.social'
+const WEBSITE = 'https://github.com/dankeck/pictafore'
 const SCOPES = 'read write follow push'
 
 export function registerApplication (instanceName, redirectUri) {
   const url = `${basename(instanceName)}/api/v1/apps`
   return post(url, {
-    client_name: process.env.UPSTREAM ? 'Enafore' : ENAFORE_IS_BROWSER ? location.hostname : 'Enafore',
+    client_name: 'Pictafore',
     redirect_uris: redirectUri,
     scopes: SCOPES,
-    website: ENAFORE_IS_BROWSER ? location.origin : WEBSITE
+    website: WEBSITE
   }, null, { timeout: WRITE_TIMEOUT })
 }
 
