@@ -19,9 +19,6 @@
   {#if !nextGrouped && !isStatusInOwnThread}
     <StatusRelativeDate {...params} {...timestampParams} />
   {/if}
-  {#if !nextGrouped}
-    <StatusSidebar {...params} />
-  {/if}
   {#if !nextGrouped && computedSpoilerText}
     <StatusSpoiler {...params} {spoilerShown} {translateContent} {showTranslate} on:recalculateHeight />
   {/if}
