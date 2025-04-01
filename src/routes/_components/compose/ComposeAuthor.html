@@ -1,13 +1,3 @@
-<a {href}
-   rel="prefetch"
-   class="compose-box-avatar {loaded ? 'loaded' : 'not-loaded'}"
-   aria-hidden="true"
-   tabindex="-1"
-   on:click="onClick(event)"
->
-  <!-- the avatar is duplicated information, so hide from tab order and screenreaders -->
-  <Avatar account={verifyCredentials} size={avatarSize} />
-</a>
 <a class="compose-box-display-name {loaded ? 'loaded' : 'not-loaded'}"
    {href}
    aria-busy={!loaded}
