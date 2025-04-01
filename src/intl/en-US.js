@@ -1,10 +1,10 @@
 export default {
   // Home page, basic <title> and <description>
   appName: 'Pictafore',
-  appDescription: 'A fediverse client with better support for Akkoma, glitch-soc, and Iceshrimp instances.',
+  appDescription: 'Fork of Enafore focused on displaying Mastodon posts with images',
   homeDescription: `
     <p>
-      Enafore is a fediverse client with better support for Akkoma, glitch-soc, and Iceshrimp instances.
+      Fork of <a href="https://github.com/enafore/enafore">Enafore</a> focused on displaying Mastodon posts with images
     </p>`,
   homeMultiInstance: `
     <p>
@@ -13,9 +13,9 @@ export default {
   logIn: 'Log in',
   footer: `
     <p>
-      Enafore is <a rel="noopener" target="_blank" href="https://github.com/enafore/enafore">open-source software</a> distributed under the
+      Pictafore is <a rel="noopener" target="_blank" href="https://github.com/dankeck/pictafore">open-source software</a> distributed under the
       <a rel="noopener" target="_blank"
-         href="https://github.com/enafore/enafore/blob/main/LICENSE">AGPL License</a>.
+         href="https://github.com/dankeck/pictafore/blob/main/LICENSE">AGPL License</a>.
       Here is the <a href="/settings/about#privacy-policy" rel="prefetch">privacy policy</a>.
     </p>
   `,
@@ -347,11 +347,12 @@ export default {
   verified: 'Verified',
   // About page
   about: 'About',
-  aboutApp: 'About Enafore',
+  aboutApp: 'About Pictafore',
   aboutAppDescription: `
   <p>
-    Enafore is <a rel="noopener" target="_blank" href="https://github.com/enafore/enafore">open-source</a> software.
+    Pictafore is <a rel="noopener" target="_blank" href="https://github.com/dankeck/pictafore">open-source</a> software, a fork of <a href="https://github.com/enafore/enafore">Enafore</a> focused on displaying Mastodon posts with images.
   </p>
+
 
   <h2 id="privacy-policy">Privacy Policy</h2>
 
@@ -381,8 +382,7 @@ export default {
   </p>
 
   <p>
-    Logo thanks to "sailboat" by Gregor Cresnar from
-    <a rel="noopener" target="_blank" href="https://thenounproject.com/">the Noun Project</a>.
+    Logo thanks to <a href="https://pixabay.com/illustrations/camera-photographic-equipment-2387821">"Camera, Photographic, Equipment"</a> by <a href="https://pixabay.com/users/mohamed_hassan-5229782">Mohamed Hassan</a> from <a href="https://pixabay.com">Pixabay</a>.
   </p>
 
   <p>
